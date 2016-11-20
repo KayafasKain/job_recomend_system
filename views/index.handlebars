@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<div class = "back container main" ng-controller = "main_cont">
+	<div class="col-lg-12">
+		<form class = "form_input col-lg-6" name = "url_form">
+			Give Us Your Upwork link<p><input class= "" ng-model = "usr_url" type="text" name = "vk_link" required></p>
+			<p><span ng-show="url_form.vk_link.$touched && url_form.vk_link.$invalid">vk profile url required.</span></p>
+			<span ng-if="error_response && !url_form.vk_link.$invalid">[{ error_response }]</span>>
+			<p><button ng-click = "get_upwork_data(usr_url)">get_upwork_data</button></p>
+			<h4>Status: [{ status }]</h4>
+		</form>
+		<div class="col-lg-6">
+			<p>Name: [{ profile.name }]</p>
+			<p>Skill level: [{ profile.skill_cluster }]</p>
+		</div>
+		<div ng-if = "rate_visible == 1">
+			<div class = "col-lg-12">
+				<p>Please, help us to improove search</p>
+				<input ng-click = "like_job(1)" type="radio" name="" value="">1
+				<input ng-click = "like_job(2)" type="radio" name="" value="">2
+				<input ng-click = "like_job(3)" type="radio" name="" value="">3
+				<input ng-click = "like_job(4)" type="radio" name="" value="">4
+				<input ng-click = "like_job(5)" type="radio" name="" value="">5
+				<input ng-click = "like_job(6)" type="radio" name="" value="">6
+				<input ng-click = "like_job(7)" type="radio" name="" value="">7
+				<input ng-click = "like_job(8)" type="radio" name="" value="">8
+				<input ng-click = "like_job(9)" type="radio" name="" value="">9
+				<input ng-click = "like_job(10)" type="radio" name="" value="">10			
+			</div>
+		</div>
+	</div>
+	<div class = "recomended_jobs">
+		<div class = "col-lg-12">
+			<div ng-repeat = "job in jobs_list">
+				
+				<div class = "job_block col-lg-12">
+					<div class="col-lg-12">
+						<a href="[{job.href}]"> [{ job.title }] </a>
+					</div>
+					<div class="col-lg-12">
+						Budget:	[{ job.salary }]
+					</div>
+				</div>	
+
+			</div>
+		</div>	
+	</div>
+</div>
+

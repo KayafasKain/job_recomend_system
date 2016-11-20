@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<div class = "back container-fluid" ng-controller = "statistics">
+
+	<!-- Pie -->
+	<div class = "col-lg-4">
+		<h3>Skill-level pie</h3>
+		<canvas id="pie" class="chart chart-pie"
+			chart-data="pie_data" chart-labels="pie_labels" chart-options="">
+		</canvas>
+	</div> 
+	<div class="col-lg-1"></div>
+	<!-- Histogram -->
+	<div class = "col-lg-7">
+		<h3>Hours worked</h3>
+		<canvas id="bar" class="chart chart-bar"
+		  chart-data="bar_data" chart-labels="bar_labels" chart-series="bar_series">
+		</canvas>
+	</div> 
+
+	<div class="col-lg-12">
+		<!-- different graphs -->
+			<div class = "col-lg-12">
+				<h3>success-hours</h3>
+				<canvas id="bar" class="chart chart-bar"
+				  chart-data="hs_data" chart-labels="hs_labels" chart-series="hs_series">
+				</canvas>	  
+			</div>
+
+			<!-- different graphs -->
+			<div class = "col-lg-12">
+				<h3>payment-hours</h3>
+				<canvas id="bar" class="chart chart-bar"
+				  chart-data="hp_data" chart-labels="hp_labels" chart-series="hp_series">
+				</canvas>	
+			</div>
+
+			<!-- different graphs -->
+			<div class = "col-lg-12">
+				<h3>success-payment</h3>
+				<canvas id="bar" class="chart chart-bar"
+				  chart-data="ps_data" chart-labels="ps_labels" chart-series="ps_series">
+				</canvas>	
+			</div>		
+    </div>
+	<!-- map -->
+	<div class = "col-lg-12"> 
+
+    	<div id="regions_div" class="col-lg-12"></div>
+
+	</div>
+	<!-- Big skill popularity pie -->
+	<div class = "col-lg-12">
+		<h3>Skill popularity</h3>
+		<canvas id="pie" class="chart chart-pie"
+			chart-data="pie_job_data" chart-labels="pie_job_labels" chart-options="">
+		</canvas>
+	</div> 
+</div>
+

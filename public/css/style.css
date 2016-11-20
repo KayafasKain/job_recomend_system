@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.back{
+	background-color: #64B5F6;
+	padding: 50px;
+}
+
+.form_input{
+	background-color: #FFF176;
+	padding: 50px;
+	margin-bottom: 30px; 
+}
+
+.output{
+	background-color: #90A4AE;
+	padding: 50px;
+}
+
+.recomended_jobs{
+	margin-top:30px!important;
+}
+
+.job_block{
+	padding: 20px 20px 10px 10px;
+	background-color: #EADB36;
+    border: 2px solid black;
+}
+
+#regions_div{
+	height: 800px;
+}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<div ng-controller = "main_cont">
+	<form name = "url_form">
+		<p>Give Us Your VK link<input ng-model = "usr_url" type="text" name = "vk_link" required></p>
+		<span ng-show="url_form.vk_link.$touched && url_form.vk_link.$invalid">vk profile url required.</span>
+
+		<button ng-click = "validator(usr_url)">LOOL</button>
+	</form>
+</div>
+
